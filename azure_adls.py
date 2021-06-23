@@ -1,8 +1,11 @@
 from azure.identity import ClientSecretCredential
-from azure.storage.blob import BlobServiceClient, BlobClient, ContainerClient
+from azure.storage.blob import BlobServiceClient
 import gzip
 import datetime
 import json
+
+# tested on python 3.7
+# pip install azure-storage-blob 
 
 def initialize_storage_account():
     client_id = "<client-id>"
